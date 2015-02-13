@@ -2,6 +2,7 @@ body {
   // background: url('/images/MK_WP.jpg') no-repeat center center fixed;
   // background-size: cover;
   background-color: black;
+  font-family: monospace;
 }
 
 #weapons, #fighters{
@@ -10,12 +11,14 @@ body {
     display: inline-block;
     margin: 2px;
     padding: 1px;
+    width: 160px;
+    text-align: center;
 
     &> div:first-child{
       border: 0px solid black;
-      width: 150px;
-      height: 100px;
-      margin: 10px;
+      width: 160px;
+      height: 220px;
+      margin: 0px;
       background-size: cover;
     }
 
@@ -25,7 +28,27 @@ body {
   }
 }
 
-.choose{
-  border: 2px dashed red;
+.title {
+  font-family: fantasy;
+}
+
+.choose {
+  border: 4px dashed red;
   // background-color: rgba(229, 65, 65, 0.34) !important;
+}
+
+.statsPanel {
+
+}
+
+.picked, .dead {
+  // background: grey !important;
+  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  filter: gray; filter: grayscale(100%);
+  filter: url(desaturate.svg#greyscale);
+
+}
+.arena {
+  background: green !important;
 }
